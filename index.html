@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Clothing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Superb collection</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to Your Clothing Brand</h2>
+            <p>Discover the latest fashion trends.</p>
+            <a href="#shop" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="shop">
+        <div class="container">
+            <h2>Shop</h2>
+            <div class="filters">
+                <input type="text" id="searchBar" placeholder="Search for products..." onkeyup="filterProducts()">
+                <select id="categoryFilter" onchange="filterProducts()">
+                    <option value="">All Categories</option>
+                    <option value="men">Men</option>
+                    <option value="women">Women</option>
+                    <option value="kids">Kids</option>
+                </select>
+                <select id="priceFilter" onchange="filterProducts()">
+                    <option value="">All Prices</option>
+                    <option value="0-50">$0 - $50</option>
+                    <option value="51-100">$51 - $100</option>
+                   
+                </select>
+            </div>
+            <div class="product-grid" id="productGrid">
+                <div class="product" data-name="Product 1" data-category="men" data-price="29.99">
+                    <img src="img/t-shirt 1.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$29.10</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="product" data-name="Product 2" data-category="women" data-price="59.99">
+                    <img src="img/t-shirt 2.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$59.10</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="product" data-name="Product 2" data-category="women" data-price="59.99">
+                    <img src="img/t-shirt 5.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$140.09</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div> <div class="product" data-name="Product 2" data-category="women" data-price="59.99">
+                    <img src="img/t-shirt 4.png" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$100.01</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+
+                <!-- Price section complete -->
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Learn more about our brand and mission.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Superb Collection . All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
